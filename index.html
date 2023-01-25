@@ -10,30 +10,30 @@
 
 <body>
 
-    <input value="Dima" class="first-name" id="first-name">
-    <!-- <h1>Обучение</h1>
-    <ul>
-        <li>Постричься</li>
-        <li>команда два</li>
-        <li>команда три</li>
-        <li>команда 4</li>
-        <li>команда 5</li>
-        <li>команда 6</li>
-    </ul> -->
+    <input value="Dima" class="first-name default input" id="first-name">
+    <input value="Glezov" class="last-name default input" id="last-name">
+    <input value="Minsk" class="address default input" id="address">
+    
     <script>
-        // let helloMessageElement ;
-        // let helloMessageId;
-        // helloMessageId = 'hello-message';
-        // helloMessageElement = document.getElementById(helloMessageId);
-        // window.alert(helloMessageElement.value);
-        // window.alert(helloMessageElement.id);
-        // window.alert(helloMessageElement.className);
-        let firstNameEl;
         let firstNameId;
+        let lastNameId;
+        let addressId;
+
+        let firstNameEl;
+        let lastNameEl;
+        let addressEl;
+
         firstNameId = 'first-name';
+        lastNameId = 'last-name';
+        addressId = 'address'
+
         firstNameEl = document.getElementById(firstNameId);
+        lastNameEl = document.getElementById(lastNameId);
+        addressEl = document.getElementById(addressId);
+        
         window.alert(firstNameEl.value);
-        window.alert(firstNameEl.className);
+        window.alert(lastNameEl.value);
+        window.alert(addressEl.value);
 
     </script>
 </body>
