@@ -13,27 +13,44 @@
     <input value="Dima" class="first-name default input" id="first-name">
     <input value="Glezov" class="last-name default input" id="last-name">
     <input value="Minsk" class="address default input" id="address">
-    
+    <select id='cities'>
+        <option> Kiev </option>
+        <option selected="selected"> Minsk </option>
+        <option> Moskow </option>
+    </select>
+    <textarea id="hobbies" >HTML, CSS, JS</textarea>
+    <div id="avatar">
+        <img id="avatarka" src="https://yt3.ggpht.com/ytc/AL5GRJXbgg0DVsZKfUDhwsaETsNFGksaWLReowhBWCMcIQ=s88-c-k-c0x00ffffff-no-rj" alt="avater">
+    </div>
     <script>
-        let firstNameId;
+        let firstNameId = 'first-name';
+        
         let lastNameId;
         let addressId;
+        let citiesId;
 
         let firstNameEl;
         let lastNameEl;
         let addressEl;
-
-        firstNameId = 'first-name';
-        lastNameId = 'last-name';
-        addressId = 'address'
-
+        let citiesEl;
+        let avatarkaId = 'avatarka';
+        avatarkaEl = document.getElementById(avatarkaId);
         firstNameEl = document.getElementById(firstNameId);
+
+        
+        lastNameId = 'last-name';
+        addressId = 'address';
+        citiesId = 'cities';
+
+        
         lastNameEl = document.getElementById(lastNameId);
         addressEl = document.getElementById(addressId);
+        citiesEl = document.getElementById(citiesId);
         
-        window.alert(firstNameEl.value);
-        window.alert(lastNameEl.value);
-        window.alert(addressEl.value);
+        //window.alert(firstNameEl.value);
+        //window.alert(lastNameEl.value);
+        //window.alert(addressEl.value);
+        window.alert(avatarkaEl.alt);
 
     </script>
 </body>
