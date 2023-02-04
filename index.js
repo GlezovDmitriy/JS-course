@@ -8,7 +8,16 @@ let firstNameEl;
 let lastNameEl;
 let addressEl;
 let citiesEl;
-
+let str = " live in Minsk!";
+function alertValue() {
+    console.log(firstNameEl.value);
+    console.log(lastNameEl.value);
+    console.log(addressEl.value);
+    console.log(citiesEl.value);
+}
+function alertName() {
+    console.log(firstNameEl.value +" "+ lastNameEl.value + str);
+}
 
 avatarkaEl = document.getElementById(avatarkaId);
 firstNameEl = document.getElementById(firstNameId);
@@ -19,11 +28,8 @@ lastNameEl = document.getElementById(lastNameId);
 addressEl = document.getElementById(addressId);
 citiesEl = document.getElementById(citiesId);
 
-window.alert(firstNameEl.value);
-window.alert(lastNameEl.className);
-window.alert(addressEl.value);
-window.alert(avatarkaEl.alt);
-
+alertValue();
+alertName();
 firstNameEl.value = "Ivan";
 lastNameEl.className = "last-name default-input error-input";
 //lastNameEl.className = "name"
@@ -33,4 +39,5 @@ citiesEl.value = "Kiev";
 avatarkaEl.innerHTML = "<ul id='list'><li>1</li><li>2</li></ul>"
 let listId = "list";
 let numberList = document.getElementById(listId);
-window.alert(numberList.innerHTML);
+console.log(numberList.innerHTML);
+alertName();
