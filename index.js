@@ -1,7 +1,7 @@
 let firstNameId = 'first-name';
-let lastNameId;
-let addressId;
-let citiesId;
+let lastNameId = 'last-name';
+let addressId = 'address';
+let citiesId = 'cities';
 let avatarkaId = 'avatarka';
 
 let firstNameEl;
@@ -9,6 +9,7 @@ let lastNameEl;
 let addressEl;
 let citiesEl;
 let str = " live in Minsk!";
+
 
 
 function alertValues(elementParameter){
@@ -23,9 +24,7 @@ avatarkaEl = document.getElementById(avatarkaId);
 firstNameEl = document.getElementById(firstNameId);
 alertValues(firstNameEl);
 
-lastNameId = 'last-name';
-addressId = 'address';
-citiesId = 'cities';
+
 
 lastNameEl = document.getElementById(lastNameId);
 alertValues(lastNameEl);
@@ -45,3 +44,11 @@ avatarkaEl.innerHTML = "<ul id='list'><li>1</li><li>2</li></ul>"
 let listId = "list";
 let numberList = document.getElementById(listId);
 
+let sendButton = document.getElementById("send-button");
+
+sendButton.addEventListener('click', alertValues);
+
+function onFirstNameKeyup(){
+    addErrorClass('first-name');
+}
+firstNameEl.addEventListener('keyup',onFirstNameKeyup);
