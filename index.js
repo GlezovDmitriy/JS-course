@@ -44,4 +44,4 @@ citiesEl.value = "Kiev";
 avatarkaEl.innerHTML = "<ul id='list'><li>1</li><li>2</li></ul>"
 let listId = "list";
 let numberList = document.getElementById(listId);
-console.log(numberList.innerHTML);
+
